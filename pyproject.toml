@@ -1,0 +1,24 @@
+[project]
+name = "cropper"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pillow>=12.0.0",
+    "pydantic>=2.12.5",
+    "pymupdf>=1.26.7",
+    "typer>=0.20.0",
+]
+
+[project.scripts]
+cropper = "cropper.cli:app"
+
+[dependency-groups]
+dev = [
+    "black>=25.12.0",
+]
+
+[tool.black]
+line-length = 100
+target-version = ["py39"]
