@@ -19,15 +19,20 @@ CropBox = Tuple[
 ]
 
 
-class Pages(BaseModel):
-    start: NonNegativeInt
-    stop: NonNegativeInt
+class Scope(BaseModel):
+    start_page: NonNegativeInt
+    stop_page: NonNegativeInt
 
 
-class Resource(BaseModel):
+class Extraction(BaseModel):
     name: str
-    pages: Pages
+    scope: Scope
     crop_boxes: Tuple[CropBox, CropBox, CropBox, CropBox]
 
 
-Resources = TypeAdapter(List[Resource])
+Extractions = List[Extraction]
+
+
+class CropManifest(BaseModel):
+    team_name: str
+    extractions: Extractions

@@ -1,3 +1,3 @@
-from cropper.models.models import Resource, Resources, ImageFormat, CropBox
+from cropper.models.models import Extraction, Extractions, ImageFormat, CropBox, CropManifest
 
-__all__ = ["Resource", "Resources", "ImageFormat", "CropBox"]
+__all__ = ["Extraction", "Extractions", "ImageFormat", "CropBox", "CropManifest"]
