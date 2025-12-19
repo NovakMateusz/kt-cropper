@@ -5,8 +5,8 @@ import fitz
 from PIL import Image
 from pymupdf import Document
 
-from cropper.models import Extraction, Extractions, ImageFormat, CropBox
-from cropper.utils.logger import get_logger
+from kt_cropper.models import Extraction, Extractions, ImageFormat, CropBox
+from kt_cropper.utils.logger import get_logger
 
 logger = get_logger(__name__)
 

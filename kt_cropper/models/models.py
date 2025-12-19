@@ -27,7 +27,7 @@ class Scope(BaseModel):
 class Extraction(BaseModel):
     name: str
     scope: Scope
-    crop_boxes: Tuple[CropBox, CropBox, CropBox, CropBox]
+    crop_boxes: List[CropBox]
 
 
 Extractions = List[Extraction]

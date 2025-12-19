@@ -2,9 +2,9 @@ import typer
 from pathlib import Path
 import logging
 
-from cropper.models import CropManifest, ImageFormat
-from cropper.core.processor import handle_request
-from cropper.utils.logger import setup_logging
+from kt_cropper.models import CropManifest, ImageFormat
+from kt_cropper.core.processor import handle_request
+from kt_cropper.utils.logger import setup_logging
 
 app = typer.Typer(help="Crop images from a PDF using a resource definition.")
 
@@ -13,11 +13,11 @@ app = typer.Typer(help="Crop images from a PDF using a resource definition.")
 def main(
     pdf_path: Path = typer.Argument(..., exists=True, readable=True),
     crop_manifest_path: Path = typer.Option(
-        ..., "--crop-manifest-path", exists=True, readable=True
+        ..., "--crop-manifest-path", "-m", exists=True, readable=True
     ),
-    output: Path = typer.Option(Path("outputs"), "--output-dir"),
-    dpi: int = typer.Option(300, "--dpi"),
-    image_format: ImageFormat = typer.Option("PNG", "--image-format"),
+    output: Path = typer.Option(Path("outputs"), "--output-dir", "-o"),
+    dpi: int = typer.Option(300, "--dpi", "-d"),
+    image_format: ImageFormat = typer.Option("PNG", "--image-format", "-f") ,
     verbose: bool = typer.Option(
         False, "--verbose", "-v", help="Enable debug logging", is_eager=True
     ),

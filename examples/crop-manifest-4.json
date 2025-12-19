@@ -1,0 +1,308 @@
+{
+    "team_name": "NemesicClaw",
+    "extractions": [
+        {
+            "name": "operatives",
+            "scope": {
+                "start_page": 0,
+                "stop_page": 2
+            },
+            "crop_boxes": [
+                [
+                    128,
+                    25,
+                    468,
+                    222
+                ],
+                [
+                    128,
+                    223,
+                    468,
+                    421
+                ],
+                [
+                    128,
+                    422,
+                    468,
+                    619
+                ],
+                [
+                    128,
+                    620,
+                    468,
+                    818
+                ]
+            ]
+        },
+        {
+            "name": "operatives",
+            "scope": {
+                "start_page": 2,
+                "stop_page": 3
+            },
+            "crop_boxes": [
+                [
+                    128,
+                    25,
+                    468,
+                    222
+                ],
+                [
+                    128,
+                    223,
+                    468,
+                    421
+                ]
+            ]
+        },
+        {
+            "name": "operatives_selection",
+            "scope": {
+                "start_page": 3,
+                "stop_page": 4
+            },
+            "crop_boxes": [
+                [
+                    100,
+                    79,
+                    297,
+                    420
+                ],
+                [
+                    298,
+                    79,
+                    496,
+                    420
+                ]
+            ]
+        },
+        {
+            "name": "rules",
+            "scope": {
+                "start_page": 3,
+                "stop_page": 4
+            },
+            "crop_boxes": [
+                [
+                    100,
+                    422,
+                    297,
+                    763
+                ],
+                [
+                    298,
+                    422,
+                    496,
+                    763
+                ]
+            ]
+        },
+        {
+            "name": "token",
+            "scope": {
+                "start_page": 4,
+                "stop_page": 5
+            },
+            "crop_boxes": [
+                [
+                    100,
+                    79,
+                    297,
+                    420
+                ]
+            ]
+        },
+        {
+            "name": "ploys",
+            "scope": {
+                "start_page": 4,
+                "stop_page": 6
+            },
+            "crop_boxes": [
+                [
+                    100,
+                    422,
+                    297,
+                    763
+                ],
+                [
+                    298,
+                    79,
+                    496,
+                    420
+                ],
+                [
+                    298,
+                    422,
+                    496,
+                    763
+                ]
+            ]
+        },
+        {
+            "name": "ploys",
+            "scope": {
+                "start_page": 5,
+                "stop_page": 6
+            },
+            "crop_boxes": [
+                [
+                    100,
+                    79,
+                    297,
+                    420
+                ],
+                [
+                    100,
+                    422,
+                    297,
+                    763
+                ],
+                [
+                    298,
+                    79,
+                    496,
+                    420
+                ],
+                [
+                    298,
+                    422,
+                    496,
+                    763
+                ]
+            ]
+        },
+        {
+            "name": "ploys",
+            "scope": {
+                "start_page": 6,
+                "stop_page": 7
+            },
+            "crop_boxes": [
+                [
+                    100,
+                    79,
+                    297,
+                    420
+                ]
+            ]
+        },
+        {
+            "name": "faction_equipment",
+            "scope": {
+                "start_page": 6,
+                "stop_page": 7
+            },
+            "crop_boxes": [
+                [
+                    100,
+                    422,
+                    297,
+                    763
+                ],
+                [
+                    298,
+                    79,
+                    496,
+                    420
+                ],
+                [
+                    298,
+                    422,
+                    496,
+                    763
+                ]
+            ]
+        },
+        {
+            "name": "faction_equipment",
+            "scope": {
+                "start_page": 7,
+                "stop_page": 8
+            },
+            "crop_boxes": [
+                [
+                    100,
+                    79,
+                    297,
+                    420
+                ]
+            ]
+        },
+        {
+            "name": "equipment",
+            "scope": {
+                "start_page": 7,
+                "stop_page": 8
+            },
+            "crop_boxes": [
+                [
+                    100,
+                    422,
+                    297,
+                    763
+                ],
+                [
+                    298,
+                    79,
+                    496,
+                    420
+                ],
+                [
+                    298,
+                    422,
+                    496,
+                    763
+                ]
+            ]
+        },
+        {
+            "name": "equipment",
+            "scope": {
+                "start_page": 8,
+                "stop_page": 10
+            },
+            "crop_boxes": [
+                [
+                    100,
+                    79,
+                    297,
+                    420
+                ],
+                [
+                    100,
+                    422,
+                    297,
+                    763
+                ],
+                [
+                    298,
+                    79,
+                    496,
+                    420
+                ],
+                [
+                    298,
+                    422,
+                    496,
+                    763
+                ]
+            ]
+        },
+        {
+            "name": "equipment",
+            "scope": {
+                "start_page": 10,
+                "stop_page": 11
+            },
+            "crop_boxes": [
+                [
+                    100,
+                    79,
+                    297,
+                    420
+                ]
+            ]
+        }
+    ]
+}

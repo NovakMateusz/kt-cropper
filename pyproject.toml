@@ -1,7 +1,7 @@
 [project]
-name = "cropper"
+name = "kt_cropper"
 version = "0.1.0"
-description = "Add your description here"
+description = "A Python-based CLI tool that extracts individual datacards from PDF files using a user-defined configuration."
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
@@ -12,7 +12,7 @@ dependencies = [
 ]
 
 [project.scripts]
-cropper = "cropper.cli:app"
+kt_cropper = "kt_cropper.cli:app"
 
 [dependency-groups]
 dev = [
