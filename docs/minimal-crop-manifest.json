@@ -1,0 +1,18 @@
+{
+  "team_name": "ExampleTeam",
+  "extractions": [
+    {
+      "name": "operatives",
+      "scope": {
+        "start_page": 0,
+        "stop_page": 2
+      },
+      "crop_boxes": [
+        [128, 25, 468, 222],
+        [128, 223, 468, 421],
+        [128, 422, 468, 619],
+        [128, 620, 468, 818]
+      ]
+    }
+  ]
+}

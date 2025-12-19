@@ -92,5 +92,9 @@ Enable verbose (debug-level) logging. Useful for troubleshooting crop issues or 
 --log-file  
 Write logs to a specified file instead of (or in addition to) standard output.
 
+
+## Crop Manifest documentation
+Goto [documentaion](docs/crop-manifest.md)
+
 ## Examples
-see the [examples](examples/README.md)
+Goto [examples](examples/examples.md)

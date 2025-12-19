@@ -1,5 +1,10 @@
 # Examples 
 
+Minimal example extracting four operative datacards from the first two pages.
+```bash
+kt_cropper document.pdf -m minimal-crop-manifest.json
+```
+
 Extracts operative datacards from pages 1–3 of a PDF, using predefined crop regions to capture multiple cards per page.
 ```bash
 kt_cropper document.pdf -m crop-manifest-1.json
