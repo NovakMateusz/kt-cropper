@@ -45,7 +45,7 @@ Windows
 ```powershell
 .\.venv\Scripts\activate
 ```
-When activating a Python virtual environment on Windwos, PowerShell may display an error stating that script execution is disabled on current system. This happens because the virtual environment activation script (**Activate.ps1**) is considered an unsigned script and is therefore blocked by the current execution policy. Running:
+When activating a Python virtual environment on Windwos, PowerShell may display an error stating that script execution is disabled on current system. This happens because the virtual environment activation script (`Activate`) is considered an unsigned script and is therefore blocked by the current execution policy. Running:
 ```powershell
 Set-ExecutionPolicy Unrestricted -Scope Process
 ```
@@ -59,7 +59,6 @@ uv pip install -e .
 This will:
 - Install dependencies
 - Register the cropper CLI command
-- Keep the code editable for development
 
 ## Usage
 ```bash

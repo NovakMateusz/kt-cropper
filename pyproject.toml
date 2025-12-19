@@ -14,6 +14,9 @@ dependencies = [
 [project.scripts]
 kt_cropper = "kt_cropper.cli:app"
 
+[tool.setuptools]
+packages = ["kt_cropper"]
+
 [dependency-groups]
 dev = [
     "black>=25.12.0",
