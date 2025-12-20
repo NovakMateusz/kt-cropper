@@ -1,14 +1,12 @@
 from enum import StrEnum
 from typing import Tuple, List
-from pathlib import Path
 
-from PIL import Image
-from pydantic import BaseModel, NonNegativeInt, TypeAdapter
+from pydantic import BaseModel, NonNegativeInt, field_validator, ValidationInfo
 
 
 class ImageFormat(StrEnum):
     PNG = "PNG"
-    JPG = "PNG"
+    JPG = "JPG"
 
 
 CropBox = Tuple[
@@ -22,6 +20,13 @@ CropBox = Tuple[
 class Scope(BaseModel):
     start_page: NonNegativeInt
     stop_page: NonNegativeInt
+
+    @field_validator('stop_page', mode='after')
+    @classmethod
+    def check_stop_gt_start(cls, value: NonNegativeInt, info: ValidationInfo) -> str:
+        if value < info.data['start_page']:
+            raise ValueError('Page stop value must be greater than the page start value')
+        return value
 
 
 class Extraction(BaseModel):
