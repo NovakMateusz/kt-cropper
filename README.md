@@ -66,30 +66,33 @@ kt_cropper [OPTIONS] PDF_PATH
 ```
 
 ### Arguments
-PDF_PATH (required)  
+PDF_PATH (**required**)  
 Path to the input PDF file containing the datacards to be extracted.
 
 ### Options
--m, --crop-manifest-path (required)  
+-m, --crop-manifest-path (**required**)  
 Path to the crop manifest file. The manifest defines how and where datacards should be detected and cropped from the PDF.
 
 -o, --output-dir  
 Directory where extracted datacards will be saved.  
-Default: outputs
+Default: `outputs`
 
 -d, --dpi  
-DPI (dots per inch) used when rendering the PDF pages to images before cropping. Higher values result in better image quality at the cost of increased processing time and file size.
-Default: 300
+DPI (dots per inch) used when rendering the PDF pages to images before cropping. Higher values result in better image quality at the cost of increased processing time and file size.  
+Default: `300`
 
 -f, --image-format  
 Output image format for the extracted datacards.  
-Default: PNG
+Default: `PNG`
 
 -v, --verbose  
 Enable verbose (debug-level) logging. Useful for troubleshooting crop issues or manifest errors.
 
 --log-file  
 Write logs to a specified file instead of (or in addition to) standard output.
+
+-V --version  
+Show version and exit
 
 
 ## Crop Manifest documentation

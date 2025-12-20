@@ -87,10 +87,10 @@ Defines a rectangular region to extract from each page in the scope.
 
 | Index | Description                    |
 |-------|--------------------------------|
-| `x1`  | Left coordinate (PDF points)   |
-| `y1`  | Top coordinate (PDF points)    |
-| `x2`  | Right coordinate (PDF points)  |
-| `y2`  | Bottom coordinate (PDF points) |
+| `x1`  | Left coordinate (PDF point)   |
+| `y1`  | Top coordinate (PDF point)    |
+| `x2`  | Right coordinate (PDF point)  |
+| `y2`  | Bottom coordinate (PDF point) |
 
 - Coordinates are specified in PDF points (1 point = 1/72 inch).
 - Crop boxes are DPI-independent. During processing, coordinates are scaled to pixels using the selected DPI (dpi / 72).

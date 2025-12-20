@@ -71,8 +71,8 @@ def crop_image(crop_box: CropBox, image: Image, zoom: float) -> Image:
     """
     Crop a region from a rendered PDF page image using PDF point coordinates.
 
-    The crop box is defined in PDF points (1/72 inch) and is scaled to pixel coordinates using 
-    the provided zoom factor before cropping. The function returns a new Pillow Image containing 
+    The crop box is defined in PDF points (1/72 inch) and is scaled to pixel coordinates using
+    the provided zoom factor before cropping. The function returns a new Pillow Image containing
     the cropped region.
     """
     crop_scaled = (

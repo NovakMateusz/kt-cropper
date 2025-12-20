@@ -21,11 +21,11 @@ class Scope(BaseModel):
     start_page: NonNegativeInt
     stop_page: NonNegativeInt
 
-    @field_validator('stop_page', mode='after')
+    @field_validator("stop_page", mode="after")
     @classmethod
     def check_stop_gt_start(cls, value: NonNegativeInt, info: ValidationInfo) -> str:
-        if value < info.data['start_page']:
-            raise ValueError('Page stop value must be greater than the page start value')
+        if value < info.data["start_page"]:
+            raise ValueError("Page stop value must be greater than the page start value")
         return value
 
 
