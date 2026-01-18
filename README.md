@@ -99,4 +99,4 @@ Show version and exit
 Goto [documentaion](docs/crop-manifest.md)
 
 ## Examples
-Goto [examples](examples/examples.md)
+Goto [examples](docs/examples.md)
